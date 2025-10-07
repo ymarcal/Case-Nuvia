@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ChatBot com Next.js e LangChain
 
-## Getting Started
+Um chatbot simples construído com Next.js, TypeScript, Tailwind CSS e LangChain integrado com OpenAI.
 
-First, run the development server:
+## 🚀 Funcionalidades
 
+- Interface de chat moderna e responsiva
+- Integração com LangChain e OpenAI GPT-3.5-turbo
+- Mensagens em tempo real
+- Indicador de carregamento
+- Design responsivo com Tailwind CSS
+
+## 📋 Pré-requisitos
+
+- Node.js 18+ 
+- Conta na OpenAI com API key
+
+## 🛠️ Instalação
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <seu-repositorio>
+cd chatbot
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instale as dependências:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Configure as variáveis de ambiente:
+   - Crie um arquivo `.env.local` na raiz do projeto
+   - Adicione sua chave da API OpenAI:
+```env
+OPENAI_API_KEY=sua_chave_da_api_aqui
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Execute o projeto:
+```bash
+npm run dev
+```
 
-## Learn More
+5. Abra [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Configuração da API OpenAI
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Acesse [OpenAI Platform](https://platform.openai.com/)
+2. Crie uma conta ou faça login
+3. Vá para "API Keys" no menu lateral
+4. Clique em "Create new secret key"
+5. Copie a chave e adicione no arquivo `.env.local`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Estrutura do Projeto
 
-## Deploy on Vercel
+```
+src/
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts      # API route para processar mensagens
+│   ├── globals.css           # Estilos globais
+│   ├── layout.tsx            # Layout principal
+│   └── page.tsx              # Página principal do chat
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Tecnologias Utilizadas
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Next.js 14** - Framework React
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS** - Estilização
+- **LangChain** - Framework para LLMs
+- **OpenAI** - Modelo de linguagem GPT-3.5-turbo
+
+## 🔄 Próximos Passos
+
+- [ ] Adicionar histórico de conversas
+- [ ] Implementar diferentes modelos de IA
+- [ ] Adicionar upload de arquivos
+- [ ] Implementar autenticação
+- [ ] Adicionar temas (claro/escuro)
+- [ ] Melhorar tratamento de erros
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
