@@ -117,16 +117,16 @@ function prepareDataForSheet(exportData: ExportData): unknown[][] {
   const rowData = [
     timestamp,
     leadId || 'N/A',
-    (leadData as any)?.nome || '',
-    (leadData as any)?.empresa || '',
-    (leadData as any)?.email || '',
-    (leadData as any)?.telefone || '',
-    (leadData as any)?.pais || '',
-    (leadData as any)?.necessidade || '',
-    (leadData as any)?.urgencia || '',
-    (leadData as any)?.cargo || '',
-    (leadData as any)?.numVendedores || '',
-    (leadData as any)?.numLeadsMensais || '',
+    (leadData as { nome?: string })?.nome || '',
+    (leadData as { empresa?: string })?.empresa || '',
+    (leadData as { email?: string })?.email || '',
+    (leadData as { telefone?: string })?.telefone || '',
+    (leadData as { pais?: string })?.pais || '',
+    (leadData as { necessidade?: string })?.necessidade || '',
+    (leadData as { urgencia?: string })?.urgencia || '',
+    (leadData as { cargo?: string })?.cargo || '',
+    (leadData as { numVendedores?: string })?.numVendedores || '',
+    (leadData as { numLeadsMensais?: string })?.numLeadsMensais || '',
     (scoreData as { totalScore?: number })?.totalScore || 0,
     (scoreData as { percentage?: number })?.percentage || 0,
     conversationLength || 0,
@@ -274,8 +274,8 @@ export async function POST(request: NextRequest) {
 
     console.log('📊 [SHEETS] Iniciando exportação:', {
       leadId: exportData.googleSheetsData?.leadId || exportData.leadId,
-      nome: exportData.googleSheetsData?.nome || (exportData.leadData as any)?.nome,
-      empresa: exportData.googleSheetsData?.empresa || (exportData.leadData as any)?.empresa,
+      nome: exportData.googleSheetsData?.nome || (exportData.leadData as { nome?: string })?.nome,
+      empresa: exportData.googleSheetsData?.empresa || (exportData.leadData as { empresa?: string })?.empresa,
       formato: exportData.googleSheetsData ? 'novo' : 'antigo'
     });
 

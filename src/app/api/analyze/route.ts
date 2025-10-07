@@ -445,8 +445,7 @@ async function analyzeLeadData(
 function generateGoogleSheetsData(
   leadData: LeadData,
   scoreResult: ScoreResult,
-  leadId: string,
-  conversationHistory: Array<{isUser: boolean; text: string}> = []
+  leadId: string
 ): GoogleSheetsData {
   const now = new Date().toISOString();
   
@@ -535,8 +534,7 @@ export async function POST(request: NextRequest) {
     const googleSheetsData = generateGoogleSheetsData(
       leadData as LeadData,
       scoreResult,
-      finalLeadId,
-      conversationHistory
+      finalLeadId
     );
 
     console.log('🎯 [ANALYZER] Análise concluída:', {

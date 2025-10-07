@@ -224,7 +224,7 @@ Responda de forma natural e extraia os dados presentes na mensagem.`,
         googleSheetsData = analysisResult.googleSheetsData;
         
         // Verifica se a temperatura é "quente" para enviar link de agendamento
-        const temperatureAnalysis = (score as any)?.temperatureAnalysis;
+        const temperatureAnalysis = (score as { temperatureAnalysis?: { temperatura?: string } })?.temperatureAnalysis;
         if (temperatureAnalysis?.temperatura === 'quente') {
           isHotLead = true;
           aiResponse.response = 'Perfeito! Coletamos todas as informações necessárias. Com base no seu perfil, você é um lead de alta prioridade para nossa equipe! 🚀\n\nPara agilizar o processo, você pode agendar uma reunião diretamente com nosso especialista através deste link:\n\n📅 [Agendar Reunião - Nuvia AI](https://meetings.hubspot.com/robson-lima/bate-papo-nuvia-ai)\n\nNossa equipe entrará em contato em breve para discutir como podemos ajudar sua empresa a acelerar a geração de receita!';

@@ -1,5 +1,6 @@
-import fs from 'fs';
-import path from 'path';
+// 🎯 VERSÃO COMPATÍVEL COM VERCEL - SEM SISTEMA DE ARQUIVOS
+// import fs from 'fs';
+// import path from 'path';
 
 export interface PromptLogEntry {
   id: string;
@@ -7,7 +8,7 @@ export interface PromptLogEntry {
   userMessage: string;
   prompt: string;
   response: string;
-  extractedData: Record<string, any>;
+  extractedData: Record<string, unknown>;
   isComplete: boolean;
   confidence: number;
   leadId?: string;
@@ -15,45 +16,16 @@ export interface PromptLogEntry {
 }
 
 export class PromptLogger {
-  private logFilePath: string;
   private sessionId: string;
+  private logs: PromptLogEntry[] = []; // 🎯 ARMAZENAMENTO EM MEMÓRIA PARA VERCEL
 
   constructor(sessionId?: string) {
     this.sessionId = sessionId || this.generateSessionId();
-    this.logFilePath = path.join(process.cwd(), 'logs', 'prompts.json');
-    this.ensureLogDirectory();
+    // 🎯 REMOVIDO: Sistema de arquivos não funciona no Vercel
   }
 
   private generateSessionId(): string {
     return `session_${Date.now()}_${Math.random().toString(36).slice(2, 9)}`;
-  }
-
-  private ensureLogDirectory(): void {
-    const logDir = path.dirname(this.logFilePath);
-    if (!fs.existsSync(logDir)) {
-      fs.mkdirSync(logDir, { recursive: true });
-    }
-  }
-
-  private readLogs(): PromptLogEntry[] {
-    try {
-      if (!fs.existsSync(this.logFilePath)) {
-        return [];
-      }
-      const data = fs.readFileSync(this.logFilePath, 'utf-8');
-      return JSON.parse(data);
-    } catch (error) {
-      console.error('Erro ao ler logs de prompts:', error);
-      return [];
-    }
-  }
-
-  private writeLogs(logs: PromptLogEntry[]): void {
-    try {
-      fs.writeFileSync(this.logFilePath, JSON.stringify(logs, null, 2));
-    } catch (error) {
-      console.error('Erro ao escrever logs de prompts:', error);
-    }
   }
 
   public logPrompt(entry: Omit<PromptLogEntry, 'id' | 'timestamp' | 'sessionId'>): void {
@@ -64,40 +36,36 @@ export class PromptLogger {
       ...entry,
     };
 
-    const logs = this.readLogs();
-    logs.push(logEntry);
-    this.writeLogs(logs);
+    // 🎯 ARMAZENAR EM MEMÓRIA (Vercel-compatible)
+    this.logs.push(logEntry);
 
     // Log no console para desenvolvimento
-    // console.log('📝 [PROMPT LOG]', {
-    //   id: logEntry.id,
-    //   timestamp: logEntry.timestamp,
-    //   userMessage: entry.userMessage.substring(0, 100) + '...',
-    //   promptLength: entry.prompt.length,
-    //   responseLength: entry.response.length,
-    //   isComplete: entry.isComplete,
-    //   confidence: entry.confidence,
-    // });
+    console.log('📝 [PROMPT LOG]', {
+      id: logEntry.id,
+      timestamp: logEntry.timestamp,
+      userMessage: entry.userMessage.substring(0, 100) + '...',
+      promptLength: entry.prompt.length,
+      responseLength: entry.response.length,
+      isComplete: entry.isComplete,
+      confidence: entry.confidence,
+    });
   }
 
   public getLogs(limit?: number): PromptLogEntry[] {
-    const logs = this.readLogs();
-    return limit ? logs.slice(-limit) : logs;
+    return limit ? this.logs.slice(-limit) : this.logs;
   }
 
   public getLogsBySession(sessionId: string): PromptLogEntry[] {
-    const logs = this.readLogs();
-    return logs.filter(log => log.sessionId === sessionId);
+    return this.logs.filter(log => log.sessionId === sessionId);
   }
 
   public getRecentLogs(hours: number = 24): PromptLogEntry[] {
-    const logs = this.readLogs();
     const cutoffTime = new Date(Date.now() - hours * 60 * 60 * 1000);
-    return logs.filter(log => new Date(log.timestamp) > cutoffTime);
+    return this.logs.filter(log => new Date(log.timestamp) > cutoffTime);
   }
 
   public clearLogs(): void {
-    this.writeLogs([]);
+    this.logs = [];
   }
 
   public getSessionId(): string {

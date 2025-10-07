@@ -135,7 +135,7 @@ export default function ChatBot() {
       setTimeout(() => {
         inputRef.current?.focus();
       }, 100);
-    } catch (error) {
+    } catch {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         text: 'Desculpe, ocorreu um erro ao processar sua mensagem.',
