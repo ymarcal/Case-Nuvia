@@ -35,6 +35,7 @@ export default function ChatBot() {
   const collectedDataRef = useRef<LeadData>({});
   const [googleSheetsData, setGoogleSheetsData] = useState<unknown | null>(null);
   const [hasAutoExported, setHasAutoExported] = useState(false);
+  const [isHotLead, setIsHotLead] = useState(false);
 
   // Função para fazer scroll para a última mensagem (otimizada com useCallback)
   const scrollToBottom = useCallback(() => {
@@ -123,6 +124,11 @@ export default function ChatBot() {
       // 🎯 CAPTURAR DADOS DO GOOGLE SHEETS PARA EXPORTAÇÃO AUTOMÁTICA
       if (data.googleSheetsData && data.isComplete) {
         setGoogleSheetsData(data.googleSheetsData);
+      }
+      
+      // 🎯 CAPTURAR INFORMAÇÃO SOBRE LEAD QUENTE
+      if (data.isHotLead) {
+        setIsHotLead(true);
       }
       
       // Foca no input após receber resposta do bot
@@ -282,6 +288,51 @@ export default function ChatBot() {
               </div>
             </div>
           )}
+          
+          {/* 🎯 COMPONENTE DE LEAD QUENTE - LINK DE AGENDAMENTO */}
+          {isHotLead && (
+            <div className="flex justify-center animate-fade-in-up">
+              <div className="max-w-md w-full">
+                <div className="bg-gradient-to-r from-orange-500 to-red-500 text-white p-6 rounded-2xl shadow-large border border-orange-200/50 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 to-red-600/20"></div>
+                  <div className="relative z-10">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-bold">🔥 Lead de Alta Prioridade!</h3>
+                        <p className="text-orange-100 text-sm">Você é um lead quente para nossa equipe</p>
+                      </div>
+                    </div>
+                    
+                    <p className="text-orange-100 mb-4 text-sm">
+                      Com base no seu perfil, você tem alta prioridade! Agende uma reunião diretamente com nosso especialista:
+                    </p>
+                    
+                    <a
+                      href="https://meetings.hubspot.com/robson-lima/bate-papo-nuvia-ai"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center w-full bg-white text-orange-600 font-bold py-3 px-6 rounded-xl hover:bg-orange-50 transition-all duration-200 hover-lift shadow-medium"
+                    >
+                      <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                      </svg>
+                      Agendar Reunião - Nuvia AI
+                    </a>
+                    
+                    <p className="text-orange-200 text-xs mt-3 text-center">
+                      Nossa equipe entrará em contato em breve para acelerar sua geração de receita! 🚀
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+          
           <div ref={messagesEndRef} />
         </div>
 

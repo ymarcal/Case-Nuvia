@@ -213,6 +213,7 @@ Responda de forma natural e extraia os dados presentes na mensagem.`,
     let leadId: string | null = null;
     let score: unknown | null = null;
     let googleSheetsData: unknown | null = null;
+    let isHotLead: boolean = false;
 
     if (isComplete) {
       const analysisResult = await analyzeLeadData(finalData, request, conversationHistory);
@@ -222,8 +223,14 @@ Responda de forma natural e extraia os dados presentes na mensagem.`,
         score = analysisResult.score;
         googleSheetsData = analysisResult.googleSheetsData;
         
-        // Atualiza a resposta para confirmar coleta completa
-        aiResponse.response = 'Perfeito! Coletamos todas as informações necessárias. Nossa equipe entrará em contato em breve para discutir como podemos ajudar sua empresa.';
+        // Verifica se a temperatura é "quente" para enviar link de agendamento
+        const temperatureAnalysis = (score as any)?.temperatureAnalysis;
+        if (temperatureAnalysis?.temperatura === 'quente') {
+          isHotLead = true;
+          aiResponse.response = 'Perfeito! Coletamos todas as informações necessárias. Com base no seu perfil, você é um lead de alta prioridade para nossa equipe! 🚀\n\nPara agilizar o processo, você pode agendar uma reunião diretamente com nosso especialista através deste link:\n\n📅 [Agendar Reunião - Nuvia AI](https://meetings.hubspot.com/robson-lima/bate-papo-nuvia-ai)\n\nNossa equipe entrará em contato em breve para discutir como podemos ajudar sua empresa a acelerar a geração de receita!';
+        } else {
+          aiResponse.response = 'Perfeito! Coletamos todas as informações necessárias. Nossa equipe entrará em contato em breve para discutir como podemos ajudar sua empresa.';
+        }
       } else {
         // Fallback se a análise falhar
         leadId = generateLeadId();
@@ -262,6 +269,7 @@ Responda de forma natural e extraia os dados presentes na mensagem.`,
       score: score,
       leadId: leadId,
       googleSheetsData: googleSheetsData,
+      isHotLead: isHotLead,
     });
 
   } catch (error) {

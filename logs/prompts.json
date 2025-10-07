@@ -1704,5 +1704,321 @@
     "isComplete": true,
     "confidence": 1,
     "leadId": "lead_1759806276061_lowrs9n"
+  },
+  {
+    "id": "prompt_1759810047756_8av0c8o",
+    "timestamp": "2025-10-07T04:07:27.756Z",
+    "sessionId": "session_1759810044129_d1a7r0h",
+    "userMessage": "aopa, sou o yuri, senior executive global finance private banking da rotschild",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\nNenhum dado coletado ainda\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: aopa, sou o yuri, senior executive global finance private banking da rotschild\n\nMENSAGEM ATUAL DO USUÁRIO:\naopa, sou o yuri, senior executive global finance private banking da rotschild\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Ótimo, Yuri! Então você é um executivo sênior na área de finanças privadas da Rothschild. Poderia me informar seu país de origem?",
+    "extractedData": {
+      "nome": "Yuri",
+      "empresa": "Rothschild",
+      "contato": "",
+      "pais": "",
+      "necessidade": "",
+      "urgencia": "",
+      "cargo": "senior executive global finance private banking",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810114813_8rpi4cy",
+    "timestamp": "2025-10-07T04:08:34.813Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "yuri, netflix",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\nNenhum dado coletado ainda\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: yuri, netflix\n\nMENSAGEM ATUAL DO USUÁRIO:\nyuri, netflix\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Ótimo, Yuri! Você mencionou a Netflix, então já temos o seu nome e a empresa. Poderia me informar seu contato, como um e-mail ou telefone?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "netflix",
+      "contato": "",
+      "pais": "",
+      "necessidade": "",
+      "urgencia": "",
+      "cargo": "",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810209853_ke5efv8",
+    "timestamp": "2025-10-07T04:10:09.853Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "sou  o yuri, senior executive global finance private equity da rotschild",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\nNenhum dado coletado ainda\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou  o yuri, senior executive global finance private equity da rotschild\n\nMENSAGEM ATUAL DO USUÁRIO:\nsou  o yuri, senior executive global finance private equity da rotschild\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Prazer em te conhecer, Yuri! Já anotei que você é o Senior Executive Global Finance Private Equity da Rothschild. Poderia me informar seu email ou telefone para contato?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "rothschild",
+      "contato": "",
+      "pais": "",
+      "necessidade": "",
+      "urgencia": "",
+      "cargo": "Senior Executive Global Finance Private Equity",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810261148_jbr8voq",
+    "timestamp": "2025-10-07T04:11:01.148Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "sou o yuri, senior executive global finance privaty equitiy da rotchild. ",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\nNenhum dado coletado ainda\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \n\nMENSAGEM ATUAL DO USUÁRIO:\nsou o yuri, senior executive global finance privaty equitiy da rotchild. \n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "",
+      "pais": "",
+      "necessidade": "",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810325746_qp6lw57",
+    "timestamp": "2025-10-07T04:12:05.746Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "email yuri@farialima.com e telefone 629942424655",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"\",\n  \"pais\": \"\",\n  \"necessidade\": \"\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"\",\n  \"numLeadsMensais\": \"\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\n\nMENSAGEM ATUAL DO USUÁRIO:\nemail yuri@farialima.com e telefone 629942424655\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "",
+      "necessidade": "",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810333884_ryjzjc6",
+    "timestamp": "2025-10-07T04:12:13.884Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "brasilzao",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"\",\n  \"necessidade\": \"\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"\",\n  \"numLeadsMensais\": \"\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\n\nMENSAGEM ATUAL DO USUÁRIO:\nbrasilzao\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810347120_syowjr9",
+    "timestamp": "2025-10-07T04:12:27.120Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "minha empresa esta falida",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"\",\n  \"numLeadsMensais\": \"\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\n\nMENSAGEM ATUAL DO USUÁRIO:\nminha empresa esta falida\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810367728_er5nafj",
+    "timestamp": "2025-10-07T04:12:47.728Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "uai, diga voce qual a urgencia em uma empresa falindo",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"\",\n  \"numLeadsMensais\": \"\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\n\nMENSAGEM ATUAL DO USUÁRIO:\nuai, diga voce qual a urgencia em uma empresa falindo\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810377101_fgrr0is",
+    "timestamp": "2025-10-07T04:12:57.101Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "1000",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"\",\n  \"numLeadsMensais\": \"\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\n\nMENSAGEM ATUAL DO USUÁRIO:\n1000\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": ""
+    },
+    "isComplete": false,
+    "confidence": 0.9
+  },
+  {
+    "id": "prompt_1759810387961_46cb2fi",
+    "timestamp": "2025-10-07T04:13:07.961Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "alguns",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"1000\",\n  \"numLeadsMensais\": \"\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\nAgente: Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?\nUsuário: alguns\n\nMENSAGEM ATUAL DO USUÁRIO:\nalguns\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Obrigado pela informação, Yuri! Então, vocês geram alguns leads mensais. Com isso, conseguimos coletar todos os dados necessários. Agradeço pela sua colaboração!",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": "alguns"
+    },
+    "isComplete": false,
+    "confidence": 1
+  },
+  {
+    "id": "prompt_1759810448132_5jcwj9b",
+    "timestamp": "2025-10-07T04:14:08.132Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "e ai",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"1000\",\n  \"numLeadsMensais\": \"alguns\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\nAgente: Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?\nUsuário: alguns\nAgente: Obrigado pela informação, Yuri! Então, vocês geram alguns leads mensais. Com isso, conseguimos coletar todos os dados necessários. Agradeço pela sua colaboração!\nUsuário: e ai\n\nMENSAGEM ATUAL DO USUÁRIO:\ne ai\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Oi, Yuri! Como você está? Parece que não temos mais dados a coletar, então agradeço pela sua colaboração!",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": "alguns"
+    },
+    "isComplete": false,
+    "confidence": 1
+  },
+  {
+    "id": "prompt_1759810460502_mxmz3u4",
+    "timestamp": "2025-10-07T04:14:20.502Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "eu sou bonito?",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"1000\",\n  \"numLeadsMensais\": \"alguns\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\nAgente: Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?\nUsuário: alguns\nAgente: Obrigado pela informação, Yuri! Então, vocês geram alguns leads mensais. Com isso, conseguimos coletar todos os dados necessários. Agradeço pela sua colaboração!\nUsuário: e ai\nAgente: Oi, Yuri! Como você está? Parece que não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: eu sou bonito?\n\nMENSAGEM ATUAL DO USUÁRIO:\neu sou bonito?\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Haha, com certeza, Yuri! A beleza é uma qualidade que todos devem valorizar. No entanto, não temos mais dados a coletar, então agradeço pela sua colaboração!",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": "alguns"
+    },
+    "isComplete": false,
+    "confidence": 1
+  },
+  {
+    "id": "prompt_1759810514705_m4amosp",
+    "timestamp": "2025-10-07T04:15:14.705Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "na verdade eu recebo 300 leads mensais",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"1000\",\n  \"numLeadsMensais\": \"alguns\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\nAgente: Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?\nUsuário: alguns\nAgente: Obrigado pela informação, Yuri! Então, vocês geram alguns leads mensais. Com isso, conseguimos coletar todos os dados necessários. Agradeço pela sua colaboração!\nUsuário: e ai\nAgente: Oi, Yuri! Como você está? Parece que não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: eu sou bonito?\nAgente: Haha, com certeza, Yuri! A beleza é uma qualidade que todos devem valorizar. No entanto, não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: na verdade eu recebo 300 leads mensais\n\nMENSAGEM ATUAL DO USUÁRIO:\nna verdade eu recebo 300 leads mensais\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Entendi, Yuri! Então, vocês recebem 300 leads mensais. Agora, só para confirmar, você gostaria de adicionar mais alguma informação ou temos tudo que precisamos?",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": "300"
+    },
+    "isComplete": false,
+    "confidence": 1
+  },
+  {
+    "id": "prompt_1759810524163_9k0ekix",
+    "timestamp": "2025-10-07T04:15:24.163Z",
+    "sessionId": "session_1759810111121_gxnh83d",
+    "userMessage": "temos tudo",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"1000\",\n  \"numLeadsMensais\": \"300\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\nAgente: Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?\nUsuário: alguns\nAgente: Obrigado pela informação, Yuri! Então, vocês geram alguns leads mensais. Com isso, conseguimos coletar todos os dados necessários. Agradeço pela sua colaboração!\nUsuário: e ai\nAgente: Oi, Yuri! Como você está? Parece que não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: eu sou bonito?\nAgente: Haha, com certeza, Yuri! A beleza é uma qualidade que todos devem valorizar. No entanto, não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: na verdade eu recebo 300 leads mensais\nAgente: Entendi, Yuri! Então, vocês recebem 300 leads mensais. Agora, só para confirmar, você gostaria de adicionar mais alguma informação ou temos tudo que precisamos?\nUsuário: temos tudo\n\nMENSAGEM ATUAL DO USUÁRIO:\ntemos tudo\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Ótimo, Yuri! Fico feliz que tenhamos coletado todas as informações necessárias. Se precisar de mais alguma coisa, é só avisar!",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": "300"
+    },
+    "isComplete": false,
+    "confidence": 1
+  },
+  {
+    "id": "prompt_1759810639333_ztump84",
+    "timestamp": "2025-10-07T04:17:19.333Z",
+    "sessionId": "session_1759810630553_8rn8pdq",
+    "userMessage": "meu pedido é bem urgente. se puder adicionar essa info!",
+    "prompt": "Você é um agente de qualificação de leads da Nuvia, especializado em conversas naturais e coleta de dados.\n\nVocê deve conversar com o usuário de forma natural e amigável, com o objetivo de coletar os dados necessários para a qualificação do lead.\nNão deixe a conversa estagnar: sempre pergunte o próximo campo que precisa ser coletado.\nSEMPRE termine sua resposta com uma pergunta sobre o próximo campo que falta\n\nTAREFA: Analise a mensagem atual do usuário e extraia apenas os dados que aparecem explicitamente no texto. Se um dado não estiver presente, deixe como null.\n\nCAMPOS PARA EXTRAIR:\n- nome: Nome completo da pessoa\n- empresa: Nome da empresa\n- contato: Email ou telefone\n- pais: País de origem\n- necessidade: Principal necessidade/problema\n- urgencia: Urgência para solução\n- cargo: Cargo/função na empresa\n- numVendedores: Quantidade de vendedores\n- numLeadsMensais: Quantidade de leads mensais\n\nREGRAS IMPORTANTES:\n1. Extraia APENAS dados que aparecem na mensagem atual\n2. NÃO invente ou assuma dados\n3. Se múltiplos campos aparecem na mesma mensagem, extraia todos\n4. Mantenha a resposta conversacional natural e amigável\n5. Se a coleta estiver completa, agradeça e confirme\n\nDADOS JÁ COLETADOS:\n{\n  \"nome\": \"yuri\",\n  \"empresa\": \"Rothschild\",\n  \"contato\": \"yuri@farialima.com\",\n  \"pais\": \"brasilzao\",\n  \"necessidade\": \"minha empresa esta falida\",\n  \"urgencia\": \"\",\n  \"cargo\": \"senior executive global finance privaty equitiy\",\n  \"numVendedores\": \"1000\",\n  \"numLeadsMensais\": \"300\"\n}\n\nHISTÓRICO DA CONVERSA:\nAgente: Olá! Sou da Nuvia, empresa especializada em soluções de IA para geração de receita. Para te ajudar da melhor forma, preciso coletar algumas informações básicas. Qual é o seu nome completo?\nUsuário: sou o yuri, senior executive global finance privaty equitiy da rotchild. \nAgente: Prazer em conhecê-lo, Yuri! Então, você é um executivo sênior de finanças na Rothschild. Poderia me informar seu contato, como um email ou telefone?\nUsuário: email yuri@farialima.com e telefone 629942424655\nAgente: Ótimo, Yuri! Agora temos seu contato. Poderia me informar de qual país você é?\nUsuário: brasilzao\nAgente: Legal, Yuri! Então você é do Brasil. Agora, qual é a sua principal necessidade ou problema que você gostaria de resolver?\nUsuário: minha empresa esta falida\nAgente: Entendi, Yuri, isso deve ser bastante desafiador. Poderia me dizer qual é a urgência que você sente para encontrar uma solução para isso?\nUsuário: uai, diga voce qual a urgencia em uma empresa falindo\nAgente: Entendo que a situação é realmente urgente, Yuri. Agora, você poderia me informar quantos vendedores sua empresa tem?\nUsuário: 1000\nAgente: Perfeito, Yuri! Agora temos a informação de que sua empresa tem 1000 vendedores. Por último, você poderia me dizer quantos leads mensais vocês geram?\nUsuário: alguns\nAgente: Obrigado pela informação, Yuri! Então, vocês geram alguns leads mensais. Com isso, conseguimos coletar todos os dados necessários. Agradeço pela sua colaboração!\nUsuário: e ai\nAgente: Oi, Yuri! Como você está? Parece que não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: eu sou bonito?\nAgente: Haha, com certeza, Yuri! A beleza é uma qualidade que todos devem valorizar. No entanto, não temos mais dados a coletar, então agradeço pela sua colaboração!\nUsuário: na verdade eu recebo 300 leads mensais\nAgente: Entendi, Yuri! Então, vocês recebem 300 leads mensais. Agora, só para confirmar, você gostaria de adicionar mais alguma informação ou temos tudo que precisamos?\nUsuário: temos tudo\nAgente: Ótimo, Yuri! Fico feliz que tenhamos coletado todas as informações necessárias. Se precisar de mais alguma coisa, é só avisar!\nUsuário: meu pedido é bem urgente. se puder adicionar essa info!\n\nMENSAGEM ATUAL DO USUÁRIO:\nmeu pedido é bem urgente. se puder adicionar essa info!\n\nResponda de forma natural e extraia os dados presentes na mensagem.",
+    "response": "Perfeito! Coletamos todas as informações necessárias. Com base no seu perfil, você é um lead de alta prioridade para nossa equipe! 🚀\n\nPara agilizar o processo, você pode agendar uma reunião diretamente com nosso especialista através deste link:\n\n📅 [Agendar Reunião - Nuvia AI](https://meetings.hubspot.com/robson-lima/bate-papo-nuvia-ai)\n\nNossa equipe entrará em contato em breve para discutir como podemos ajudar sua empresa a acelerar a geração de receita!",
+    "extractedData": {
+      "nome": "yuri",
+      "empresa": "Rothschild",
+      "contato": "yuri@farialima.com",
+      "pais": "brasilzao",
+      "necessidade": "minha empresa esta falida",
+      "urgencia": "urgente",
+      "cargo": "senior executive global finance privaty equitiy",
+      "numVendedores": "1000",
+      "numLeadsMensais": "300"
+    },
+    "isComplete": true,
+    "confidence": 1,
+    "leadId": "lead_1759810639326_tpyneck"
   }
 ]
