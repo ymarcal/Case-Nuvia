@@ -125,6 +125,8 @@ CAMPOS PARA EXTRAIR:
 - numVendedores: Quantidade de vendedores
 - numLeadsMensais: Quantidade de leads mensais
 
+Extraia TODOS os campos anteriores.
+
 REGRAS IMPORTANTES:
 1. Extraia APENAS dados que aparecem na mensagem atual
 2. NÃO invente ou assuma dados
