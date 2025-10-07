@@ -10,7 +10,6 @@ Um chatbot inteligente construído com Next.js, TypeScript, Tailwind CSS e LangC
 - **Sistema de pontuação e qualificação** de leads em tempo real
 - **Exportação automática para Google Sheets** com dados estruturados
 - **Detecção de leads quentes** com link direto para agendamento
-- **Logs de conversas** para análise e melhoria contínua
 - **Design responsivo** com Tailwind CSS e animações suaves
 
 ## 📋 Pré-requisitos
@@ -109,13 +108,9 @@ src/
 │   │   │   └── route.ts      # API principal do chatbot
 │   │   ├── export-sheets/
 │   │   │   └── route.ts      # API para exportação ao Google Sheets
-│   │   └── prompts/
-│   │       └── route.ts      # API para logs de conversas
 │   ├── globals.css           # Estilos globais
 │   ├── layout.tsx            # Layout principal
 │   └── page.tsx              # Interface do chatbot
-├── lib/
-│   └── promptLogger.ts       # Sistema de logs de conversas
 └── schemas/
     └── chatSchemas.ts        # Schemas TypeScript para validação
 ```
@@ -150,7 +145,6 @@ src/
 - ✅ **Exportação para Google Sheets** com dados estruturados
 - ✅ **Detecção de leads quentes** com agendamento direto
 - ✅ **Interface responsiva** e moderna
-- ✅ **Logs de conversas** para análise
 - ✅ **Validação de dados** com Zod
 - ✅ **Deploy pronto** para produção
 
@@ -158,6 +152,7 @@ src/
 
 - [ ] Implementar autenticação de usuários
 - [ ] Adicionar dashboard de analytics
+- [ ] Implementar sistema de logs opcional
 - [ ] Integração com CRM (HubSpot, Salesforce)
 - [ ] Sistema de templates de mensagens
 - [ ] Notificações em tempo real

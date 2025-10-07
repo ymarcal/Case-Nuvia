@@ -3,7 +3,6 @@ import { ChatOpenAI } from '@langchain/openai';
 import { HumanMessage, SystemMessage } from '@langchain/core/messages';
 import { PromptTemplate } from '@langchain/core/prompts';
 import { AIResponseSchema, LeadData, AIResponse } from '../../../schemas/chatSchemas';
-import { promptLogger } from '../../../lib/promptLogger';
 
 // -----------------------------
 // Configuração e Helpers
@@ -246,21 +245,6 @@ Responda de forma natural e extraia os dados presentes na mensagem.`,
       }
     }
 
-    // Log do prompt para monitoramento
-    try {
-      await promptLogger.logPrompt({
-        userMessage: message,
-        prompt: formattedPrompt,
-        response: aiResponse.response,
-        extractedData: aiResponse.extractedData,
-        isComplete: isComplete,
-        confidence: aiResponse.confidence ?? 0.8,
-        leadId: leadId || undefined,
-      });
-    } catch (logError) {
-      console.error('Erro ao logar prompt:', logError);
-      // Não falha a requisição se o log falhar
-    }
 
     // Resposta final
     return NextResponse.json({
